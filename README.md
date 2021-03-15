@@ -34,6 +34,7 @@ Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomi
 - Trello: https://trello.com/b/f7fnUhdg/test-technique-simplon
 - hébergeur: https://apply-gestion-parc.000webhostapp.com
 - Figma (wireframe): https://www.figma.com/file/A7O8Nv2XjoYUHjUQMH6lKU/Test-Technique-SIMPLON
+- Modélisation BDD: https://drive.google.com/file/d/1JbmbbnQHtWEZ1zBmupbuKon9m6BYXxwM/view?usp=sharing
 
 
 ```
