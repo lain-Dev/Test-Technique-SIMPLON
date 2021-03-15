@@ -2,7 +2,7 @@
 
 <div class="global-container">
 	<div class="card login-form mt-5">
-	<div class="card-body" style="background-color: #f5f5f5;">
+	<div class="card-body" style="background-color: #e9ecef;">
 		<h3 class="card-title text-center">Se connecter !</h3>
 		<div class="card-text">
 			<!--
@@ -10,10 +10,12 @@
 			<form>
 				<!-- to error: add class "has-danger" -->
 				<div class="form-group">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
 					<label for="exampleInputEmail1">Email address</label>
 					<input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
 				</div>
 				<div class="form-group">
+                    <i class="fa fa-key" aria-hidden="true"></i>
 					<label for="exampleInputPassword1">Password</label>
 					<!-- <a href="#" style="float:right;font-size:12px;">Forgot password?</a> -->
 					<input type="password" class="form-control form-control-sm" id="exampleInputPassword1">

@@ -23,30 +23,37 @@
 <div class="wrapper">
     
     <header>
-        <nav class="navbar navbar-expand-custom navbar-mainbg">
-
-            <a class="navbar-brand navbar-logo" href="home.php">gestion Parc Informatique</a>
-            
+    
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e9ecef;">
+					
+            <a class="navbar-brand navbar-logo" href="home.php">Gestion Poste</a>	
+                    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars text-white"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-desktop"></i>Ajout Poste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-address-card-o"></i>Ajout Utilisateur</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-list-alt"></i>Liste</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="login.php"><i class="fa fa-sign-in"></i>se connecter</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="formAddPoste.php"><i class="fa fa-desktop mr-2"></i>Ajout Poste</a>
+                        </li>
+
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="formAddUser.php"><i class="fa fa-address-card-o mr-2"></i>Ajout Utilisateur</a>
+                        </li>
+
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="admin.php"><i class="fa fa-list-alt mr-2"></i>Liste</a>
+                        </li>
+
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="login.php"><i class="fa fa-sign-in mr-2"></i>se connecter</a>
+                        </li>
+
+                        </ul>
+                    </div>
+                    
+        </nav>		
+
     </header>

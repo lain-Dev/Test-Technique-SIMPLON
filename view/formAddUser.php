@@ -3,7 +3,7 @@
 
 <div class="container text-center" style="margin-top: 40px;">
       <div class="jumbotron">
-        <h1>Admin!</h1>
+        <h1>Add user!</h1>
         <p>...</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
