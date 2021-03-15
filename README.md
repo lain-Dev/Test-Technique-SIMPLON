@@ -26,8 +26,8 @@ C’est le/la secrétaire du centre qui gère l’attribution des postes et qui 
 ## Technologies à utiliser :
 
 - Langages backend : PHP ou Javascript. (**php**)
-Base de données : au choix. (**MysQL**)
-Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomique. (**Bootstrap 4**)
+- Base de données : au choix. (**MysQL**)
+- Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomique. (**Bootstrap 4**)
 
 ## Liens:
 
