@@ -26,14 +26,15 @@ C’est le/la secrétaire du centre qui gère l’attribution des postes et qui 
 ## Technologies à utiliser :
 
 - Langages backend : PHP ou Javascript. (**php**)
-Base de données : au choix. (**MysQL**)
-Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomique. (**Bootstrap 4**)
+- Base de données : au choix. (**MysQL**)
+- Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomique. (**Bootstrap 4**)
 
 ## Liens:
 
 - Trello: https://trello.com/b/f7fnUhdg/test-technique-simplon
 - hébergeur: https://apply-gestion-parc.000webhostapp.com
 - Figma (wireframe): https://www.figma.com/file/A7O8Nv2XjoYUHjUQMH6lKU/Test-Technique-SIMPLON
+- Modélisation BDD: https://drive.google.com/file/d/1JbmbbnQHtWEZ1zBmupbuKon9m6BYXxwM/view?usp=sharing
 
 
 ```
