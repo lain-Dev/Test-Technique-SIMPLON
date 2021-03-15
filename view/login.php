@@ -2,33 +2,26 @@
 
 <div class="global-container">
 	<div class="card login-form mt-5">
-	<div class="card-body" style="background-color: #e9ecef;">
-		<h3 class="card-title text-center">Se connecter !</h3>
-		<div class="card-text">
-			<!--
-			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
-			<form>
-				<!-- to error: add class "has-danger" -->
-				<div class="form-group">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
-				</div>
-				<div class="form-group">
-                    <i class="fa fa-key" aria-hidden="true"></i>
-					<label for="exampleInputPassword1">Password</label>
-					<!-- <a href="#" style="float:right;font-size:12px;">Forgot password?</a> -->
-					<input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
-				</div>
-				<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-				
-				<!-- <div class="sign-up">
-					Don't have an account? <a href="#">Create One</a>
-				</div> -->
-			</form>
+		<div class="card-body" style="background-color: #e9ecef;">
+			<h3 class="card-title text-center">Se connecter !</h3>
+			<div class="card-text">
+				<form action="admin.php" method="POST" id="loginPage">
+					<div class="form-group">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<label for="exampleInputEmail1">Identifiant</label>
+						<input type="text" class="form-control form-control-sm" id="login" name="login" required placeholder="Entrez votre login" value="<?php if(isset($_POST['login'])){echo htmlspecialchars($_POST['login'], ENT_QUOTES);}?>">
+					</div>
+					<div class="form-group">
+						<i class="fa fa-key" aria-hidden="true"></i>
+						<label for="exampleInputPassword1">Mot passe</label>
+						<input type="password" class="form-control form-control-sm" id="password" name="password" required placeholder="Entrez votre mot de passe">
+					</div>
+					<button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+					
+				</form>
+			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 
