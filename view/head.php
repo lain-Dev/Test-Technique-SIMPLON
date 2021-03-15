@@ -46,18 +46,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="login.php"><i class="fa fa-sign-in"></i>se connecter</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
-                    </li> -->
                 </ul>
             </div>
         </nav>
