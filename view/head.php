@@ -4,31 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
-    <!-- link pour la map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-    crossorigin="" />
-    <link rel="stylesheet" href="../style/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../public/css/style.css">
     <!--Font awesome-->
     <script src="https://use.fontawesome.com/c18e5332f2.js"></script>
     <!--AOS Animate on scroll library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>ZotColoc</title>
+    <title>Centre Culturel St-Denis</title>
 
 </head>
 
 <body>
+
+<div class="wrapper">
     
     <header>
-        <nav>
-        
-        
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+
+            <a class="navbar-brand navbar-logo" href="home.php">gestion Parc Informatique</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-desktop"></i>Ajout Poste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-address-card-o"></i>Ajout Utilisateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fa fa-list-alt"></i>Liste</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.php"><i class="fa fa-sign-in"></i>se connecter</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                    </li> -->
+                </ul>
+            </div>
         </nav>
     </header>
