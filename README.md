@@ -21,3 +21,6 @@ Technologies à utiliser :
 Langages backend : PHP ou Javascript. (moi php)
 Base de données : au choix. (MysQL)
 Framework : au choix. Il est iSportant d’avoir un design agréable et ergonomique. (Bootstrap 4)
+
+Trello: https://trello.com/b/f7fnUhdg/test-technique-simplon
+hébergeur: https://apply-gestion-parc.000webhostapp.com/
