@@ -26,7 +26,7 @@
     
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e9ecef;">
 					
-            <a class="navbar-brand navbar-logo" href="home.php">Gestion Poste</a>	
+            <a class="navbar-brand navbar-logo" href="home.php"><i class="fa fa-home mr-2" aria-hidden="true"></i>Accueil</a>	
                     
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                         </li>
 
                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="admin.php"><i class="fa fa-list-alt mr-2"></i>Liste</a>
+                            <a class="nav-link" href="admin.php"><i class="fa fa-list-alt mr-2"></i>gestion</a>
                         </li>
 
                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
