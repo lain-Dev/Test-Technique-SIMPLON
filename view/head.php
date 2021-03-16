@@ -36,16 +36,13 @@
                         <ul class="navbar-nav ml-auto py-4 py-md-0">
 
                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="formAddPoste.php"><i class="fa fa-desktop mr-2"></i>Ajout Poste</a>
+                            <a class="nav-link" href="poste.php"><i class="fa fa-desktop mr-2"></i>Liste Poste</a>
                         </li>
 
                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="formAddUser.php"><i class="fa fa-address-card-o mr-2"></i>Ajout Utilisateur</a>
+                            <a class="nav-link" href="user.php"><i class="fa fa-address-card-o mr-2"></i>Liste Utilisateur</a>
                         </li>
 
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="admin.php"><i class="fa fa-list-alt mr-2"></i>gestion</a>
-                        </li>
 
                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                             <a class="nav-link" href="login.php"><i class="fa fa-sign-in mr-2"></i>se connecter</a>

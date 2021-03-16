@@ -3,7 +3,7 @@
 
 <div class="container text-center" style="margin-top: 40px;">
       <div class="jumbotron">
-        <h1>Hello, world!</h1>
+        <h1>liste des postes et les dates de reservation !</h1>
         <p>...</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
