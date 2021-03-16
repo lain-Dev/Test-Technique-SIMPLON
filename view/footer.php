@@ -13,7 +13,7 @@
     <div class="text-center pt-3">
         &copy;
         <script>document.write(new Date().getFullYear());</script>
-        <span>Gestion Parc Ordinateur - Centre Culturel -  Saint-Denis</span>
+        <span> Centre Culturel</span>
     </div>
 
 </footer>

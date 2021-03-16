@@ -5,7 +5,7 @@
 		<div class="card-body" style="background-color: #e9ecef;">
 			<h3 class="card-title text-center">Se connecter !</h3>
 			<div class="card-text">
-				<form action="admin.php" method="POST" id="loginPage">
+				<form action="home.php" method="POST" id="login">
 					<div class="form-group">
 						<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						<label for="exampleInputEmail1">Identifiant</label>
