@@ -35,8 +35,8 @@
 
       <div class="col-auto mt-2">
       <i class="fa fa-id-card-o" aria-hidden="true"></i>
-        <label for="num_carte">Numero abonné</label>
-        <input type="text" class="form-control form-control-sm" id="num_carte" name="num_carte" required placeholder="Entrez le numéro carte de l'utilisateur" value="<?php if(isset($_POST['num_carte'])){echo htmlspecialchars($_POST['num_carte'], ENT_QUOTES);}?>">
+        <label for="num_carte">ID abonné</label>
+        <input type="number" min="1" class="form-control form-control-sm" id="num_carte" name="num_carte" required placeholder="Entrez le numéro carte de l'utilisateur" value="<?php if(isset($_POST['num_carte'])){echo htmlspecialchars($_POST['num_carte'], ENT_QUOTES);}?>">
       </div>
     </div>
     

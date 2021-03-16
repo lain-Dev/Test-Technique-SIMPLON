@@ -20,11 +20,6 @@
 						<label for="exampleInputEmail1">Prénom</label>
 						<input type="text" class="form-control form-control-sm" id="prenom" name="prenom" required placeholder="Entrez le prénom utilisateur" value="<?php if(isset($_POST['prenom'])){echo htmlspecialchars($_POST['prenom'], ENT_QUOTES);}?>">
 					</div>
-          			<div class="form-group">
-						<i class="fa fa-id-card-o" aria-hidden="true"></i>
-						<label for="exampleInputEmail1">Numero abonné</label>
-						<input type="text" class="form-control form-control-sm" id="num_carte" name="num_carte" required placeholder="Entrez le numéro carte de l'utilisateur" value="<?php if(isset($_POST['num_carte'])){echo htmlspecialchars($_POST['num_carte'], ENT_QUOTES);}?>">
-					</div>
 
 					<button type="submit" class="btn btn-primary btn-block">Enregistrer</button>
 					
@@ -39,7 +34,6 @@
 				<th scope="col">ID</th>
 				<th scope="col">Nom</th>
 				<th scope="col">Prénom</th>
-				<th scope="col">Numéro membre</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -47,7 +41,6 @@
 				<th scope="row">exemple: ID</th>
 				<td>lebon</td>
 				<td>olivier</td>
-				<td>465</td>
 			</tr>
 		</tbody>
 	</table>
