@@ -2,6 +2,9 @@
 // On démarre une session
 session_start();
 
+// Connexion à la base
+require_once('../controller/connection.php');
+
 ?>
 
 <!DOCTYPE html>
