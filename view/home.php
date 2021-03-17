@@ -1,5 +1,6 @@
 <?php require_once(dirname(__DIR__).'/view/head.php');?>
 
+<?php if ($_SESSION['user'] == true) { ?>
 <form class="container" action="home.php" method="POST" id="home">
   <div class="form-row">
 
@@ -46,7 +47,10 @@
 
   </div>
 
-</form>
+</form>                      
+<?php } ?>
+
+
 
 <div class="container text-center" style="margin-top: 40px;">
       <div class="jumbotron">

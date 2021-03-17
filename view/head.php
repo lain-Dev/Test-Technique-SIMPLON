@@ -1,10 +1,6 @@
 <?php
 // On démarre une session
 session_start();
-
-// Connexion à la base
-require_once('../controller/connection.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +27,7 @@ require_once('../controller/connection.php');
 
 <body>
 
+
 <div class="wrapper">
     
     <header>
@@ -46,18 +43,30 @@ require_once('../controller/connection.php');
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto py-4 py-md-0">
 
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="poste.php"><i class="fa fa-desktop mr-2"></i>Liste Poste</a>
-                        </li>
+                            <!-- Si aucun utilisateur n'est connecté, on affiche raccouris login -->
+                            <?php if ($_SESSION["user"] == false) { ?>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="login.php"><i class="fa fa-sign-in mr-2"></i>se connecter</a>
+                            </li>
+                            <!--Sinon si connecté, affiche button déconnecter-->
+                            <?php } else if ($_SESSION['user'] == true) { ?>
 
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="user.php"><i class="fa fa-address-card-o mr-2"></i>Liste Utilisateur</a>
-                        </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link mt-2" href="poste.php"><i class="fa fa-desktop mr-2"></i>Liste Poste</a>
+                            </li>
 
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link mt-2" href="user.php"><i class="fa fa-address-card-o mr-2"></i>Liste Utilisateur</a>
+                            </li>
 
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="login.php"><i class="fa fa-sign-in mr-2"></i>se connecter</a>
-                        </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="">
+                                    <form action="../controller/logOut.php" style="margin-top: 0px; padding-top: 1px">
+                                        <button class="btn btn-primary btn-green-nav" type="submit" name="deconnexion" style="margin: 0px;">Déconnexion</button>
+                                    </form>
+                                </a>
+                            </li>
+                            <?php } ?>
 
                         </ul>
                     </div>
@@ -65,3 +74,5 @@ require_once('../controller/connection.php');
         </nav>		
 
     </header>
+
+
