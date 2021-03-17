@@ -48,20 +48,35 @@ ajouterUser();
 		</div>
 	</div>
 
-	<table class="table table-striped p-1 col-7">
+	<table class="table table-striped p-1 col-9">
 		<thead>
 			<tr>
 				<th scope="col">ID</th>
 				<th scope="col">Nom</th>
 				<th scope="col">Prénom</th>
+				<th scope="col">Action</th>
 			</tr>
 		</thead>
 		<tbody>
-			<!-- <tr>
-				<th scope="row">exemple: ID</th>
-				<td>lebon</td>
-				<td>olivier</td>
-			</tr> -->
+			<tr>
+				<form action="../controller/formUser.php.php" style="margin: 0px; padding: 0px;">
+					<th scope="row">66</th>
+					<td>
+						<input type="text" class="form-control" placeholder="nom">
+					</td>
+					<td>
+						<input type="text" class="form-control" placeholder="prenom">
+					</td>
+					<td>
+						<a>
+							<button class="btn btn-danger btn-sm" type="submit" name="supprimer" style="margin: 0px;">X</button>
+							<button class="btn btn-success btn-sm" type="submit" name="modifier" style="margin: 0px;">
+								<i class="fa fa-refresh" aria-hidden="true"></i>
+							</button>
+						</a>
+					</td>
+				</form>
+			</tr>
 		</tbody>
 	</table>
 </div>

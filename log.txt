@@ -156,3 +156,5 @@ Wednesday 17th of March 2021 01:41:30 PM: Connexion à la base de données réus
 Wednesday 17th of March 2021 01:41:30 PM: utilisateur a été créé avec succès
 Wednesday 17th of March 2021 01:41:44 PM: Connexion à la base de données réussie
 Wednesday 17th of March 2021 01:41:44 PM: utilisateur a été créé avec succès
+Wednesday 17th of March 2021 07:21:15 PM: Connexion à la base de données réussie
+Wednesday 17th of March 2021 07:21:15 PM: utilisateur a été créé avec succès

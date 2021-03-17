@@ -68,7 +68,7 @@ if(!isset($_SESSION['user'])){
                             </li>
 
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="">
+                                <a class="nav-link">
                                     <form action="../controller/logOut.php" style="margin-top: 0px; padding-top: 1px">
                                         <button class="btn btn-primary btn-green-nav btn-sm" type="submit" name="deconnexion" style="margin: 0px;">Déconnexion</button>
                                     </form>
