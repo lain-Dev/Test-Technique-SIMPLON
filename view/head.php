@@ -1,6 +1,10 @@
 <?php
 // On démarre une session
 session_start();
+//il faut vérifier si la session est connecté et l'appelé sinon l session n'est pas définis
+if(!isset($_SESSION['user'])){
+    $_SESSION['user'] = false;
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +46,13 @@ session_start();
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto py-4 py-md-0">
-
+                        
                             <!-- Si aucun utilisateur n'est connecté, on affiche raccouris login -->
-                            <?php if ($_SESSION["user"] == false) { ?>
+                            <?php 
+                            if ($_SESSION["user"] == false) { 
+                            
+                            ?>
+
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                 <a class="nav-link" href="login.php"><i class="fa fa-sign-in mr-2"></i>se connecter</a>
                             </li>
@@ -62,7 +70,7 @@ session_start();
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                 <a class="nav-link" href="">
                                     <form action="../controller/logOut.php" style="margin-top: 0px; padding-top: 1px">
-                                        <button class="btn btn-primary btn-green-nav" type="submit" name="deconnexion" style="margin: 0px;">Déconnexion</button>
+                                        <button class="btn btn-primary btn-green-nav btn-sm" type="submit" name="deconnexion" style="margin: 0px;">Déconnexion</button>
                                     </form>
                                 </a>
                             </li>
@@ -74,5 +82,7 @@ session_start();
         </nav>		
 
     </header>
+
+  
 
 

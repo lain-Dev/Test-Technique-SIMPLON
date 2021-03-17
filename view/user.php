@@ -1,5 +1,6 @@
 <?php require_once(dirname(__DIR__).'/view/head.php');?>
 
+<?php if ($_SESSION['user'] == true) { ?>
 
 <div class="global-container row row-cols-lg-2 row-cols-1">
 	<div class="card login-form mt-5">
@@ -46,8 +47,6 @@
 	</table>
 </div>
 
-
-
-
+<?php } ?>
 
 <?php require_once(dirname(__DIR__).'/view/footer.php');?>

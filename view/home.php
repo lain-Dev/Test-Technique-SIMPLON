@@ -1,6 +1,9 @@
-<?php require_once(dirname(__DIR__).'/view/head.php');?>
+<?php require_once(dirname(__DIR__).'/view/head.php');
+?>
+
 
 <?php if ($_SESSION['user'] == true) { ?>
+
 <form class="container" action="home.php" method="POST" id="home">
   <div class="form-row">
 
@@ -42,7 +45,7 @@
     </div>
     
    
-      <button type="submit" class="btn btn-primary btn-block mx-5">Envoyer</button>
+      <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
  
 
   </div>

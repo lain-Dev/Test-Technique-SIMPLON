@@ -38,12 +38,4 @@ function connexion()
         }
     }
 
-    // Quand l'utilisateur clique sur btn deconnexion on détruit sa session et on reviens à l'accueil
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['deconnexion'])) {
-        $_SESSION['user'] = false;
-        session_destroy();
-        error_log(date('l jS \of F Y h:i:s A') . ": Déconnexion réussie\r\n", 3, '../log.txt');
-        header('Location: ../index.php');
-        die;
-    }
 }
