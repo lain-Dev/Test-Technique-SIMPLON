@@ -1,4 +1,9 @@
-<?php require_once(dirname(__DIR__).'/view/head.php');?>
+<?php 
+require_once(dirname(__DIR__).'/view/head.php');
+require_once(dirname(__DIR__).'/controller/formUser.php');
+ajouterUser();
+?>
+
 
 <?php if ($_SESSION['user'] == true) { ?>
 
@@ -7,10 +12,24 @@
 		<div class="card-body" style="background-color: #e9ecef;">
 			<h3 class="card-title text-center">Ajouter utilisateur !</h3>
 			<div class="card-text">
-				<!--
-				<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
-				<form action="" method="POST" id="user">
-					<!-- to error: add class "has-danger" -->
+
+				<?php
+					// Affiche un message d'alerte en fonction de la valeur de $count_crea (défini dans la fonction creationAtelier())
+					if (isset($_POST['addUser'])) {
+						if ($count_crea > 0) {
+							echo '<div class="alert alert-danger alert-dismissible fade show text-center fw-bold shadow" role="alert">';
+							echo '<span>Une erreur est survenue</span>';
+							echo '</div>';
+						} else {
+							echo '<div class="alert alert-success alert-dismissible fade show text-center fw-bold shadow" role="alert">';
+							echo '<span>L\'utilisateur à été ajouter</span>';
+							echo '</div>';
+						}
+					}
+				?>
+				
+				<form action="" method="POST">
+					
 					<div class="form-group">
 						<i class="fa fa-user" aria-hidden="true"></i>
 						<label for="exampleInputEmail1">Nom</label>
@@ -22,7 +41,7 @@
 						<input type="text" class="form-control form-control-sm" id="prenom" name="prenom" required placeholder="Entrez le prénom utilisateur" value="<?php if(isset($_POST['prenom'])){echo htmlspecialchars($_POST['prenom'], ENT_QUOTES);}?>">
 					</div>
 
-					<button type="submit" class="btn btn-primary btn-block">Enregistrer</button>
+					<button type="submit" class="btn btn-primary btn-block" name="addUser">Enregistrer</button>
 					
 				</form>
 			</div>
@@ -38,11 +57,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
+			<!-- <tr>
 				<th scope="row">exemple: ID</th>
 				<td>lebon</td>
 				<td>olivier</td>
-			</tr>
+			</tr> -->
 		</tbody>
 	</table>
 </div>
