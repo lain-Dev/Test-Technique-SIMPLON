@@ -6,7 +6,7 @@ function ajouterUser()
     global $error_addUser;
     // On vérifie si le serveur reçoit un POST et si on a cliqué sur le bouton de addUser
     if (isset($_POST['addUser'])) {
-        global $count_crea;//compteur qui va m'afficher un message success ou danger
+        global $count_crea;//compteur 
         include '../controller/connexion_bdd.php'; // Connexion à la BDD
 
         extract($_POST); // Extraction des variables présentes dans le tableau POST
@@ -24,7 +24,7 @@ function ajouterUser()
         }
 
         if ($count_crea == 0) { // Si le compteur d'erreur est à 0, on ajoute utilisateur
-            // Dans la table `user`, on insère `nom`, `nom` et `prenom`
+            // Dans la table `user`, on insère `nom` et `prenom`
             $sql_user = 'INSERT INTO users (nom, prenom) VALUES (:nom, :prenom)';
             $req_user = $bdd->prepare($sql_user);
 

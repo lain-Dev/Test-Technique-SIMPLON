@@ -7,9 +7,7 @@ include '../controller/connexion_bdd.php';
 if ($bdd) {
     try {
         //all annonce ok
-        $query = $bdd->query("SELECT * 
-        FROM `users` 
-        ");
+        $query = $bdd->query("SELECT * FROM `users`");
         $users = $query->fetchAll(PDO::FETCH_OBJ);
     } catch (PDOException $e) {
         $error = $e->getMessage();

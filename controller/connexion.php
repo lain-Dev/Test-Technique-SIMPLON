@@ -13,7 +13,7 @@ function connexion()
     // On vérifie si le serveur reçoit un POST et si on a cliqué sur le bouton de connexion
     if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['connexion'])) {
 
-        include '../model/connexion_bdd.php'; // Connexion à la BDD
+        include '../controller/connexion_bdd.php'; // Connexion à la BDD
 
         // On selectionne la ligne dans la table 'admin' où login correspond à notre $_POST["login"]
         $req = $bdd->prepare('SELECT * FROM administrateur WHERE logAdmin = :logAdmin');
