@@ -10,7 +10,7 @@
 </body>
 
 <footer>
-    <div class="text-center pt-3">
+    <div class="text-center pt-3 mt-5">
         &copy;
         <script>document.write(new Date().getFullYear());</script>
         <span> Centre Culturel</span>

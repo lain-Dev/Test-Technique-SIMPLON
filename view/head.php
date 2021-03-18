@@ -60,11 +60,11 @@ if(!isset($_SESSION['user'])){
                             <?php } else if ($_SESSION['user'] == true) { ?>
 
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link mt-2" href="poste.php"><i class="fa fa-desktop mr-2"></i>Liste Poste</a>
+                                <a class="nav-link mt-2" href="postes.php"><i class="fa fa-desktop mr-2"></i>Liste Poste</a>
                             </li>
 
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link mt-2" href="user.php"><i class="fa fa-address-card-o mr-2"></i>Liste Utilisateur</a>
+                                <a class="nav-link mt-2" href="users.php"><i class="fa fa-address-card-o mr-2"></i>Liste Utilisateur</a>
                             </li>
 
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
