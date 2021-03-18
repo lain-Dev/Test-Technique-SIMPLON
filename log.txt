@@ -1,0 +1,9 @@
+Thursday 18th of March 2021 01:20:15 PM: suppresion user avec ECHEC !
+Thursday 18th of March 2021 01:20:15 PM: Connexion à la base de données réussie
+Thursday 18th of March 2021 01:20:24 PM: suppresion user avec ECHEC !
+Thursday 18th of March 2021 01:20:24 PM: Connexion à la base de données réussie
+Thursday 18th of March 2021 01:20:55 PM: suppresion user avec ECHEC !
+Thursday 18th of March 2021 01:21:15 PM: suppresion user avec ECHEC !
+Thursday 18th of March 2021 01:21:15 PM: Connexion à la base de données réussie
+Thursday 18th of March 2021 01:22:53 PM: suppresion user avec ECHEC !
+Thursday 18th of March 2021 01:22:53 PM: Connexion à la base de données réussie
