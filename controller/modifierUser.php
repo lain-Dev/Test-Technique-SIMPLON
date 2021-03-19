@@ -1,9 +1,9 @@
 <?php
 
     $count_modif = 0; // Compteur d'erreur
-    
-    if (isset($_POST['mofifierUser'])) {
-       
+   
+   
+        print_r(1);
         global $count_crea;//compteur 
         include '../controller/connexion_bdd.php'; // Connexion à la BDD
 
@@ -24,16 +24,13 @@
 
         if ($count_crea == 0) { // Si le compteur d'erreur est à 0, on ajoute utilisateur
             // Dans la table `user`, on insère `nom` et `prenom`
-            $sql_user = 'UPDATE INTO users (nom, prenom) VALUES (:nom, :prenom) WHERE id = :id';
+
+            $sql_user = "UPDATE `users` SET prenom = '$prenom', nom = '$nom' WHERE id = '$id'";
             $req_user = $bdd->prepare($sql_user);
 
-            $req_user->execute(array(
-                'nom' => $nom,
-                'prenom' => $prenom
-            ));
+            $req_user->execute();
 
             error_log(date('l jS \of F Y h:i:s A') . ": utilisateur a été modifié avec succès\r\n", 3, '../log.txt');
             header('Location:../view/users.php');exit();
         }
 
-    }
