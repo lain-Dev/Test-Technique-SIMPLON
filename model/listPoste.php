@@ -6,7 +6,7 @@
 			<th scope="row"><?= htmlspecialchars($poste->id); ?></th>
 			<input type="hidden" value="<?= htmlspecialchars($poste->id);?>" name="id"><!--Input cacher poure récupérer ID de la ligne ! -->
 			<td>
-				<input type="text" class="form-control" placeholder="nom" value="<?= htmlspecialchars($poste->poste); ?>">
+				<input type="text" class="form-control" placeholder="nom" value="<?= htmlspecialchars($poste->poste); ?>" name="poste">
 			</td>	
 			<td>
 				<a class="d-flex">

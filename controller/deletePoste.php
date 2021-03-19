@@ -2,13 +2,11 @@
        
        include '../controller/connexion_bdd.php'; // Connexion à la BDD
 
-       $id = strip_tags($_POST['id']);
+       $id = $_POST['id'];
 
-       $sql_user = 'DELETE FROM `postes` WHERE id = $id';
+       $sql_user = "DELETE FROM `postes` WHERE id = '$id'";
        // On prépare la requête
        $req_user = $bdd->prepare($sql_user);
-       // On "accroche" les paramètre (id)
-       $req_user->bindValue(':id', $id, PDO::PARAM_INT);
        // On exécute la requête
        $req_user->execute();
        

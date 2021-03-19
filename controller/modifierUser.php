@@ -2,8 +2,6 @@
 
     $count_modif = 0; // Compteur d'erreur
    
-   
-        print_r(1);
         global $count_crea;//compteur 
         include '../controller/connexion_bdd.php'; // Connexion à la BDD
 

@@ -8,8 +8,6 @@
         $sql_user = "DELETE FROM `users` WHERE id = '$id'";
         // On prépare la requête
         $req_user = $bdd->prepare($sql_user);
-        // On "accroche" les paramètre (id)
-       //  $req_user->bindValue(':id', $id, PDO::PARAM_INT);
         // On exécute la requête
         $req_user->execute();
         

@@ -4,7 +4,7 @@ session_start();
 //il faut vérifier si la session est connecté et l'appelé sinon l session n'est pas définis
 if(!isset($_SESSION['user'])){
     $_SESSION['user'] = false;
-    
+    $_SESSION['flash'];
 }
 ?>
 
