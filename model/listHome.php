@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php foreach($affectation as $id_poste => $affectation ):?>
+            <?php foreach($affectations as $id_poste => $affectation ):?>
                 
                 
                 <tr>
