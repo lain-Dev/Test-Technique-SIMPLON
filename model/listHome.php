@@ -22,12 +22,14 @@
                 <td><?= htmlspecialchars($affectation->id_poste); ?></td>
                 <td><?= htmlspecialchars($affectation->id_user); ?></td>
                 <td>
+                <?php if ($_SESSION['user'] == true) { ?>
                     <form action="../controller/deleteAffectation.php" method="POST" style="margin: 0px; padding: 0px;">
 
                         <input type="hidden" value="<?= htmlspecialchars($affectation->id);?>" name="id"><!--Input cacher poure récupérer ID de la ligne ! -->
 
                         <button class="btn btn-danger btn-sm" type="submit" name="supprimerAffectation" style="margin-top: 0px;">X</button>
                     </form> 
+                <?php } ?>
                 </td>
                 <tr>
             
