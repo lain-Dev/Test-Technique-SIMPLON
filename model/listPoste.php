@@ -4,7 +4,7 @@
 		<form action="../controller/modifierPoste.php" method="POST" style="margin: 0px; padding: 0px;"> 
 
 			<th scope="row"><?= htmlspecialchars($poste->id); ?></th>
-			<input type="hidden" value="<?= htmlspecialchars($user->id);?>" name="id"><!--Input cacher poure récupérer ID de la ligne ! -->
+			<input type="hidden" value="<?= htmlspecialchars($poste->id);?>" name="id"><!--Input cacher poure récupérer ID de la ligne ! -->
 			<td>
 				<input type="text" class="form-control" placeholder="nom" value="<?= htmlspecialchars($poste->poste); ?>">
 			</td>	

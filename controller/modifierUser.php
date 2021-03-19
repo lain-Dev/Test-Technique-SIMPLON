@@ -2,22 +2,38 @@
 
     $count_modif = 0; // Compteur d'erreur
     
+    if (isset($_POST['mofifierUser'])) {
        
-        extract($_POST); // Extraction des variables présentes dans le tableau POST
-        if (!empty($nom) && !empty($prenom) ) { // On vérifie que les champs ne sont pas vides
-            // On passe la fonction htmlentities() aux différents champs
-            htmlentities($nom);
-            htmlentities($prenom);
-            include '../controller/connexion_bdd.php'; // Connexion à la BDD
+        global $count_crea;//compteur 
+        include '../controller/connexion_bdd.php'; // Connexion à la BDD
 
-            // Mise à jour de la date, l'heure et le nombre de places
-            $sql = 'UPDATE `users` SET nom = "' . $nom . '", prenom = "' . $prenom . '" WHERE id = "' . $id . '"';
-            $bdd->query($sql);
-            error_log(date('l jS \of F Y h:i:s A') . ": user modifiée avec succès !\r\n", 3, '../log.txt');
-            header('Location:../view/users.php');exit();
-        } else { // Si des champs sont vides, le compteur d'erreurs s'incrémente
-          
-            error_log(date('l jS \of F Y h:i:s A') . ": erreur lors de la modification de la user !\r\n", 3, '../log.txt');
-            header('Location:../view/home.php');exit();
+        extract($_POST); // Extraction des variables présentes dans le tableau POST
+        $requiredInput = array(
+            $id,
+            $nom,
+            $prenom
+        );
+
+        // Pour chaque éléments dans le tableau $requiredInput, on passe les fonctions htmlentities() et trim()
+        foreach ($requiredInput as $input) {
+            htmlentities(trim($input));
+            if (empty($input)) { // Si un champ est vide, le compteur d'erreur augmente
+                $count_crea++;
+            }
         }
-    
+
+        if ($count_crea == 0) { // Si le compteur d'erreur est à 0, on ajoute utilisateur
+            // Dans la table `user`, on insère `nom` et `prenom`
+            $sql_user = 'UPDATE INTO users (nom, prenom) VALUES (:nom, :prenom) WHERE id = :id';
+            $req_user = $bdd->prepare($sql_user);
+
+            $req_user->execute(array(
+                'nom' => $nom,
+                'prenom' => $prenom
+            ));
+
+            error_log(date('l jS \of F Y h:i:s A') . ": utilisateur a été modifié avec succès\r\n", 3, '../log.txt');
+            header('Location:../view/users.php');exit();
+        }
+
+    }
