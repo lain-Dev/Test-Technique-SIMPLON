@@ -1,9 +1,8 @@
 <?php 
 require_once(dirname(__DIR__).'/view/head.php');
 require_once(dirname(__DIR__).'/controller/addUser.php');
-require_once(dirname(__DIR__).'/controller/deleteUser.php');
 ajouterUser();
-effacerUser();
+
 ?>
 
 

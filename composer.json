@@ -1,9 +1,0 @@
-{
-    "name": "lain/test-technique-simplon",
-    "description": "test technique simplon",
-    "type": "project",
-    "minimum-stability": "stable",
-    "require": {
-        "waavi/sanitizer": "~1.0"
-    }
-}
