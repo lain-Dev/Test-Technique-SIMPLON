@@ -483,3 +483,19 @@ Friday 19th of March 2021 10:15:15 AM: Connexion à la base de données réussie
 Friday 19th of March 2021 10:15:15 AM: Connexion à la base de données réussie
 Friday 19th of March 2021 10:15:26 AM: Connexion à la base de données réussie
 Friday 19th of March 2021 10:15:26 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 10:58:23 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 10:58:23 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 10:59:34 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 10:59:34 AM: Identifiants corrects, connexion réussie
+Friday 19th of March 2021 10:59:34 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 10:59:34 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:01:09 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:01:09 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:01:24 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:01:24 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:03:17 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:03:17 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:03:25 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:03:25 AM: affectation a été créé avec succès
+Friday 19th of March 2021 11:03:26 AM: Connexion à la base de données réussie
+Friday 19th of March 2021 11:03:26 AM: Connexion à la base de données réussie

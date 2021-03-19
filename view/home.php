@@ -67,7 +67,7 @@ require_once(dirname(__DIR__).'/controller/showUsers.php');
     </div>
     
    
-      <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+      <button type="submit" class="btn btn-primary btn-block" name="affectation">Envoyer</button>
  
 
   </div>
