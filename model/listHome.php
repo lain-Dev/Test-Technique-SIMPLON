@@ -12,10 +12,21 @@
                 </tr>
             </thead>
             <tbody>
+            <?php foreach($affectations as $id_poste => $affectation ):?>
                 <tr>
-                <td>15/03/2021</td>
-                <td>8h à 9h</td>
-                <td>465</td>
+                <td><?= htmlspecialchars($affectation->date); ?></td>
+                <td><?= htmlspecialchars($affectation->horaire); ?></td>
+                <td><?= htmlspecialchars($affectation->id_user); ?></td>
+                <td>
+                    <form action="../controller/deleteAffectation.php" method="POST" style="margin: 0px; padding: 0px;">
+
+                        <input type="hidden" value="<?= htmlspecialchars($affectation->id);?>" name="id"><!--Input cacher poure récupérer ID de la ligne ! -->
+
+                        <button class="btn btn-danger btn-sm" type="submit" name="supprimerAffectation" style="margin-top: 0px;">X</button>
+                    </form> 
+                </td>
+                <tr>
+            <?php endforeach; ?>  
             </tbody>
             </table>
             <!---->

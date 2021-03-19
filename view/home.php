@@ -2,6 +2,7 @@
 require_once(dirname(__DIR__).'/view/head.php');
 require_once(dirname(__DIR__).'/controller/showPostes.php');
 require_once(dirname(__DIR__).'/controller/showUsers.php');
+require_once(dirname(__DIR__).'/controller/showAffectation.php');          
 ?>
 
 
