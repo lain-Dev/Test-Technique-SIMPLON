@@ -1,18 +1,25 @@
-<?php require_once(dirname(__DIR__).'/view/head.php');
+<?php 
+require_once(dirname(__DIR__).'/view/head.php');
+require_once(dirname(__DIR__).'/controller/showPostes.php');
+require_once(dirname(__DIR__).'/controller/showUsers.php');
 ?>
 
 
 <?php if ($_SESSION['user'] == true) { ?>
 
-<form class="container" action="home.php" method="POST" id="home">
+<form class="container" action="../controller/affectation.php" method="POST">
   <div class="form-row">
 
     <div class="container row row-cols-lg-2 row-cols-1"> 
       <div class="col">
         <i class="fa fa-desktop mr-2" aria-hidden="true"></i>
-        <label for="poste">Poste</label>
-        <select class="form-control" id="poste" name="poste">
-          <option value="id_poste">01</option>
+        <label for="id_poste">Poste</label>
+        <select class="form-control" name="id_poste">
+          <?php foreach($postes as $poste):?>
+            <option value="<?= htmlspecialchars($poste->id); ?>">
+              <?= htmlspecialchars($poste->poste); ?>
+            </option>
+          <?php endforeach; ?> 
         </select>
       </div>
 
@@ -37,11 +44,26 @@
         <input class="form-control" type="date" value="<?php if(isset($_POST['date'])){echo htmlspecialchars($_POST['date'], ENT_QUOTES);}?>" id="date" name="date" required>
       </div>
 
-      <div class="col-auto mt-2">
+      <!--choix présentation 01-->
+      <!-- <div class="col-6 mt-2">
+        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+        <label for="id_user">ID abonné</label>
+        <input type="number" min="1" class="form-control form-control-sm" name="id_user" required placeholder="Numéro utilisateur" value="<?php if(isset($_POST['id_user'])){echo htmlspecialchars($_POST['id_user'], ENT_QUOTES);}?>">
+      </div> -->
+
+      <!--choix présentation 02-->
+      <div class="col-6">
       <i class="fa fa-id-card-o" aria-hidden="true"></i>
-        <label for="num_carte">ID abonné</label>
-        <input type="number" min="1" class="form-control form-control-sm" id="num_carte" name="num_carte" required placeholder="Entrez le numéro carte de l'utilisateur" value="<?php if(isset($_POST['num_carte'])){echo htmlspecialchars($_POST['num_carte'], ENT_QUOTES);}?>">
+        <label for="id_user">ID abonné</label>
+        <select class="form-control" name="id_user">
+          <?php foreach($users as $user):?>
+            <option value="<?= htmlspecialchars($user->id); ?>">
+              <?= htmlspecialchars($user->id); ?>
+            </option>
+          <?php endforeach; ?> 
+        </select>
       </div>
+
     </div>
     
    
