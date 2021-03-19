@@ -1,27 +1,10 @@
 <?php 
 require_once(dirname(__DIR__).'/view/head.php');
-require_once(dirname(__DIR__).'/controller/addUser.php');
-ajouterUser();
-
 ?>
 
 
 <?php if ($_SESSION['user'] == true) { ?>
 
-	<?php
-		// Affiche un message d'alerte en fonction de la valeur de $count_crea (défini dans addUser.php)
-		if (isset($_POST['addUser'])) {
-			if ($count_crea > 0) {
-				echo '<div class="container alert alert-danger alert-dismissible fade show text-center fw-bold shadow" role="alert">';
-				echo '<span>Une erreur est survenue</span>';
-				echo '</div>';
-			} else {
-				echo '<div class=" container alert alert-success alert-dismissible fade show text-center fw-bold shadow" role="alert">';
-				echo '<span>L\'utilisateur à été ajouter</span>';
-				echo '</div>';
-			}
-		}
-	?>
 
 <div class="global-container row row-cols-lg-2 row-cols-1 ">
 	<div class="card login-form mt-5 ">

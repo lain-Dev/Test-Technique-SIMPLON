@@ -1,7 +1,6 @@
 <?php
 
-function ajouterUser()
-{
+
     $error_addUser = "";
     global $error_addUser;
     // On vérifie si le serveur reçoit un POST et si on a cliqué sur le bouton de addUser
@@ -38,7 +37,7 @@ function ajouterUser()
         }
         
     }
-}
+
 
 
 

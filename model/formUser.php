@@ -1,4 +1,4 @@
-<form action="" method="POST">
+<form action="../controller/addUser.php" method="POST">
 
     <div class="form-group">
         <i class="fa fa-user" aria-hidden="true"></i>

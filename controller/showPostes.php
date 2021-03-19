@@ -7,8 +7,8 @@ include '../controller/connexion_bdd.php';
 if ($bdd) {
     try {
         //all annonce ok
-        $query = $bdd->query("SELECT * FROM `users`");
-        $users = $query->fetchAll(PDO::FETCH_OBJ);
+        $query = $bdd->query("SELECT * FROM `postes`");
+        $postes = $query->fetchAll(PDO::FETCH_OBJ);
     } catch (PDOException $e) {
         $error = $e->getMessage();
 
@@ -19,6 +19,6 @@ if ($bdd) {
         exit();
     }
 } else {
-    error_log(date('l jS \of F Y h:i:s A') . ": connexion pour affichage list users éxchoué !\r\n", 3, '../log.txt');
+    error_log(date('l jS \of F Y h:i:s A') . ": connexion pour affichage list postes éxchoué !\r\n", 3, '../log.txt');
     exit();
 }
