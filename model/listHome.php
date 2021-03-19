@@ -1,9 +1,10 @@
+
 <?php foreach($postes as $poste):?>
-    <div class="container text-center mb-1" style="margin-top: 40px;">
+    <div class="container text-center" style="margin-top: 40px;">
       <div class="jumbotron">
 
         <table class="table table-striped">
-            <h3>Poste: <?= htmlspecialchars($poste->poste); ?></h3>
+            <h3><?= htmlspecialchars($poste->poste); ?></h3>
             <thead>
                 <tr>
                 <th scope="col">Date</th>
