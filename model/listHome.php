@@ -12,7 +12,9 @@
                 </tr>
             </thead>
             <tbody>
-            <?php foreach($affectations as $id_poste => $affectation ):?>
+            <?php foreach($affectation as $id_poste => $affectation ):?>
+                
+                
                 <tr>
                 <td><?= htmlspecialchars($affectation->date); ?></td>
                 <td><?= htmlspecialchars($affectation->horaire); ?></td>
@@ -26,6 +28,7 @@
                     </form> 
                 </td>
                 <tr>
+            
             <?php endforeach; ?>  
             </tbody>
             </table>
