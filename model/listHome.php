@@ -1,25 +1,23 @@
-
+<?php foreach($postes as $poste):?>
     <div class="container text-center mb-1" style="margin-top: 40px;">
       <div class="jumbotron">
 
         <table class="table table-striped">
-            <h3>Réservation centre</h3>
+            <h3>Poste: <?= htmlspecialchars($poste->poste); ?></h3>
             <thead>
                 <tr>
                 <th scope="col">Date</th>
-                <th scope="col">Horaire</th>
-                <th scope="col">Poste</th>
-                <th scope="col">ID</th>
+                <th scope="col">Plage horaire</th>
+                <th scope="col">Numéro membre</th>
                 </tr>
             </thead>
             <tbody>
-            <?php foreach($affectations as $affectation ):?>
+            <?php foreach($affectations as $id_poste => $affectation ):?>
                 
                 
                 <tr>
                 <td><?= htmlspecialchars($affectation->date); ?></td>
                 <td><?= htmlspecialchars($affectation->horaire); ?></td>
-                <td><?= htmlspecialchars($affectation->id_poste); ?></td>
                 <td><?= htmlspecialchars($affectation->id_user); ?></td>
                 <td>
                 <?php if ($_SESSION['user'] == true) { ?>
@@ -41,4 +39,4 @@
         <div class="push-footer"></div>
     </div>
 
-  
+<?php endforeach; ?>  

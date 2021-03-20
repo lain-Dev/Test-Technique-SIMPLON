@@ -28,12 +28,12 @@ require_once(dirname(__DIR__).'/controller/showAffectation.php');
       <i class="fa fa-clock-o" aria-hidden="true"></i>
               <label for="horaire">Plage horaire</label>
               <select class="form-control" id="horaire" name="horaire">
-                <option value="8h à 9h">8h à 9h</option>
-                <option value="9h à 10h">9h à 10h</option>
-                <option value="10h à 11h">10h à 11h</option>
-                <option value="11h à 12h">11h à 12h</option>
-                <option value="14h à 15h">14h à 15h</option>
-                <option value="15h à 16h">15h à 16h</option>
+                <option value="1">8h à 9h</option>
+                <option value="2">9h à 10h</option>
+                <option value="3">10h à 11H</option>
+                <option value="4">11h à 12h</option>
+                <option value="5">14h à 15h</option>
+                <option value="6">15h à 16h</option>
               </select>
       </div>
     </div>
@@ -76,8 +76,18 @@ require_once(dirname(__DIR__).'/controller/showAffectation.php');
 </form>                      
 <?php } ?>
 
+
+
+
+        
       <?php require_once(dirname(__DIR__).'/controller/showPostes.php'); ?>	
 			<?php require_once(dirname(__DIR__).'/model/listHome.php'); ?>
+
+
+
+
+
+
 
 <?php require_once(dirname(__DIR__).'/view/footer.php');?>
 
