@@ -12,10 +12,10 @@ if ($_SERVER["REMOTE_ADDR"] == "127.0.0.1") { // Si on est en local on utilise c
     $user = "root";
     $password = "";
 } else { // Sinon on utilise les identifiants de la BDD extérieur
-    $serveur = "";
-    $dbname = "";
-    $user = "";
-    $password = "";
+    $serveur = "lebondzculturel.mysql.db";
+    $dbname = "lebondzculturel";
+    $user = "lebondzculturel";
+    $password = "dyjW9NqSi3B2UL4";
 }
 
 try {
