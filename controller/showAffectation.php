@@ -7,7 +7,7 @@ include '../controller/connexion_bdd.php';
 if ($bdd) {
     try {
         //all annonce ok
-        $query = $bdd->query("SELECT * FROM `affectations` WHERE id_poste = '$poste'-> poste");
+        $query = $bdd->query("SELECT * FROM `affectations` WHERE id_poste = id_poste");
         $affectations = $query->fetchAll(PDO::FETCH_OBJ);
     } catch (PDOException $e) {
         $error = $e->getMessage();
