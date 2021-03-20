@@ -351,3 +351,4 @@ MigrationBackup/
 
 /vendor/
 controller/connexion_bdd.php
+log.txt
